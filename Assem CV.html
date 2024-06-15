@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assem CV Page</title>
+    <link rel="icon" href="./images/logo.png"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/pngwing.com (2).png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="mainPage">
+          <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="sq color"></div>
+              <a id="pageName" class="navbar-brand" href="#">Assem Mohamed</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a id="links" class="nav-link active colorA noHover" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id="links" class="nav-link colorA noHover" href="#secoundPage">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a id="links" class="nav-link dropdown-toggle colorA noHover" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      projects
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">menu projects</a></li>
+                      <li><a class="dropdown-item" href="#">page projects</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">all projects</a></li>
+                    </ul>
+                  </li>
+                </ul>        
+                  <button onclick="openSett()" id="settingsBtn" class="setting-btn color">
+                    <span class="bar bar1"></span>
+                    <span class="bar bar2"></span>
+                    <span class="bar bar1"></span>
+                  </button>
+              </div>
+            </div>
+          </nav>
+          
+          <div class="color" id="halfScreen">
+            <div class="color" id="card">
+                <div id="clPhoto"><img src="./images/IMG_20240417_175422.jpg" alt=""></div>
+                <h1 id="cardName">Assem</h1>
+                <h6> &lt;code&gt;front end development&lt;/code&gt;</h6>
+                <div id="myLinks">
+                    <a target="_blank" href="https://www.facebook.com/assem.mohamed.9699"><img src="./images/06-facebook-128.webp" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/AssemM601"><img src="./images/BW_Twitter_glyph_svg-128.webp" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/assem2035/"><img src="./images/38-instagram-2-128.webp" alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/nitro-fn-a3b4a8294/"><img src="./images/11-linkedin-128.webp" alt=""></a>
+                </div>
+            </div>
+          </div>
+
+          <div id="info">
+            <h1>Hello</h1>
+            <p>I am "Assem Mohamed", a student at the <a target="_blank" href="https://aboukir-institutes.edu.eg/"> AHI Institute </a>, Department of Computer Information and Systems Systems in Egypt, and I have also been studying website programming for 3 years.</p>
+            <button onclick="openProjects()" id="projectsBtn" class="learn-more">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Projects</span>
+              </button>
+          </div>
+
+          <div class="color" id="settings">
+            <div id="settingsNav">
+              <div  class="color" id="colorsBtn">Colors</div>
+              <div class="color" id="reportBtn">Report</div>
+              <div class="color" id="moreBtn">More</div>
+            </div>
+              <div class="color" id="colorsPage">
+                <div onclick="colorchange4()" id="color4"></div>
+                <div onclick="colorchange()" id="color1"></div>
+                <div onclick="colorchange2()" id="color2"></div>
+                <div onclick="colorchange3()" id="color3"></div>
+              </div>
+          </div>
+          
+          <!-- <div id="projectsPage"></div> -->
+          <div id="projectsPage">
+            <div id="bokiDad">
+              <div id="topDiv"></div>
+              <div id="cl"></div>
+              <div id="line"></div>
+              <div id="botDiv"></div>
+            </div>  
+          </div>
+
+          <div id="projectPage2">
+            <div onclick="goRight()" id="goRight"><img src="./images/chevron_right_FILL0_wght400_GRAD0_opsz48.png" alt=""></div>
+            <div onclick="goLeft()" id="goLeft"><img src="./images/left.png" alt=""></div>
+            <div id="proCounter">
+              <div onclick="switchPro1()" id="count1"></div>
+              <div onclick="switchPro2()" id="count2" class="activePro"></div>
+              <div onclick="switchPro3()" id="count3"></div>
+            </div>
+            <div id="myPro">
+              <div class="activPro" id="pro1">
+                <h1 class="proName">Ghost Game</h1>
+                <p class="proP">This is a game project similar to the Chrome Dinosaur game, but more developed. I used html, css, and javascript without any library like bootstrap. I programmed this game in just 3 days. You can watch the following video or try the game through the button below ,Try it and let me know your comment.</p>
+                <a class="proLink" target="_blank" href="./my projects/test3.html">test the game</a>
+                <video id="ghostVid" autoplay controls class="proVid" src="./my projects/0607.mp4"></video>
+              </div>
+              <div id="pro2">
+                <h1 class="proName">Guess Game</h1>
+                <p class="proP">This is a game of guessing the correct number, and you have five attempts to guess the number. I took this idea from a filter on TikTok and I wanted to make this filter a game on the web.</p>
+                <a class="proLink" target="_blank" href="./my projects/guessGame.html">test the game</a>
+                <video id="guessVid" autoplay controls class="proVid" src="./my projects/guess game vid.mp4"></video>
+                
+              </div>
+              <div id="pro3">
+                <h1 class="proName">PC Store</h1>
+                <p class="proP">This is a website for a store that sells computers and computer accessories. I created this website only for training on the code. The programming was done with html, css, and javascript without any library.</p>
+                <a class="proLink" target="_blank" href="./my projects/PROJECT1 SITE/project1.html">test the website</a>
+                <video id="guessVid" autoplay controls class="proVid" src="./my projects/pc store.mp4"></video>
+              </div>
+            </div>
+            <div onmouseleave="scaleUnHover()" onmouseenter="scaleHover()" onclick="closeProjects()" id="cl2">
+              <img id="closeImg" src="./images/icon-close-round-128.webp">
+            </div>
+          </div>
+
+          <div class="color" id="secoundPage">
+            <form action="">
+              <input id="firstIP" type="text" placeholder="First name">
+              <input id="lastIP" type="text" placeholder="last name">
+              <input id="emailIP" type="email" placeholder="Email">
+              <input id="commentIP" type="text" placeholder="Comment">
+              <div id="submitIP">submit</div>
+
+            </form>
+          </div>
+
+          <div class="color" id="comments">
+            <div id="commentsDad">
+              <div>
+                <h1>Ahmed mohamed</h1>
+                <h4>ahmedhamo51@gmail.com</h4>
+                <p>hi assem iam Ahmed mohamed from Egypt how are you ? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique aperiam ipsum quasi perspiciatis impedit quae non earum eos! Non consequuntur voluptatum repellendus explicabo quibusdam alias voluptas excepturi quod dicta praesentium.</p>
+              </div>
+          </div>
+
+    </div>
+
+
+   <script src="js.js"></script>
+   <script src="https://kit.fontawesome.com/d401ca8247.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>

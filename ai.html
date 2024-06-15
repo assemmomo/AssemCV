@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .color-picker {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.settings-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.color-options {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.color-options input {
+    width: 100px;
+    height: 30px;
+}
+
+.box {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#typing {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* تأثير الكتابة */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100px; }
+}
+
+/* تأثير الوميض للمؤشر */
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+.hidden-content {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.wow {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+body{
+    height: 200vh;
+}
+    </style>
+</head>
+<body>
+    <div class="color-picker">
+        <button class="settings-btn" onclick="toggleColorPicker()">&#9881;</button>
+        <div class="color-options">
+        <input type="color" id="colorInput" onchange="changeSiteColor()">
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="box" id="box1">
+            <h2>Box 1</h2>
+            <p>This is Box 1 content.</p>
+        </div>
+        <div class="box" id="box2">
+            <h2>Box 2</h2>
+            <p>This is Box 2 content.</p>
+        </div>
+    </div>
+
+    <div id="typing">مرحباً بك في موقعنا!</div>
+    <div class="hidden-content wow">
+        <!-- المحتوى الذي سيظهر عند التمرير -->
+        asfasf
+      </div>
+    <script>
+      let randomNumber = Math.floor(Math.random() * 101);
+      console.log(randomNumber);
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>متجر الهواتف</title>
+<style>
+  /* أضف الأنماط هنا */
+  .cart-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<!-- أضف هذا الزر بجانب كل منتج -->
+<button class="cart-button">أضف إلى السلة</button>
+
+<!-- قسم لعرض السلة -->
+<div id="cart">
+  <h2>سلة المشتريات</h2>
+  <!-- عناصر السلة ستظهر هنا -->
+</div>
+
+<script>
+// JavaScript لإضافة الوظائف للزر وتحديث السلة
+var cart = [];
+
+// وظيفة لإضافة منتج إلى السلة
+function addToCart(product) {
+  cart.push(product);
+  updateCart();
+}
+
+// وظيفة لتحديث السلة
+function updateCart() {
+  var cartElement = document.getElementById('cart');
+  cartElement.innerHTML = '<h2>سلة المشتريات</h2>';
+  cart.forEach(function(product) {
+    cartElement.innerHTML += '<p>' + product.name + ' - ' + product.price + '</p>';
+  });
+}
+
+// أضف event listener للزر
+var buttons = document.getElementsByClassName('cart-button');
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function() {
+    addToCart({name: 'هاتف 1', price: '1000'});
+  });
+}
+</script>
+</body>
+</html>
